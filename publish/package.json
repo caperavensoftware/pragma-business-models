@@ -1,6 +1,6 @@
 {
 	"name": "@pragmaproducts/pragma-business-models",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
@@ -20,9 +20,12 @@
 		"build-utilities": "0.0.102"
 	},
 	"jspm": {
-		"dependencies": {
-			"aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0",
-			"aurelia-framework": "npm:aurelia-framework@^1.0.1"
+		"registry": "npm",
+		"jspmPackage": true,
+		"main": "index",
+		"format": "amd",
+		"directories": {
+			"dist": "publish/"
 		}
 	}
 }
