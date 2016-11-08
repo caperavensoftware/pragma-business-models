@@ -6,6 +6,10 @@ gulp.task('publish', ['build:all'], function() {
 
     publish.publish([
         {
+            src: ["app/src/index.js"],
+            dest: "publish"
+        },
+        {
             src: ["app/src/lib/**/*.*"],
             dest: "publish/lib"
         },
