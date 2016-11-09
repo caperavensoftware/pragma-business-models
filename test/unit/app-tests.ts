@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import {App} from './../../src/app';
+import {App} from '../../src/app';
 
 describe('App Tests', function() {
     var app;

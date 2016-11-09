@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import {Welcome} from './../../../src/views/welcome/welcome';
+import {Welcome} from '../../../src/views/welcome/welcome';
 
 describe('Welcome Tests', function() {
    var welcome;

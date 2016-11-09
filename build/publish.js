@@ -22,11 +22,11 @@ gulp.task('publish', ['build:all'], function() {
             dest: "publish/types"
         },
         {
-            src: ["src/calculator-bo.ts"],
+            src: ["src/calculator-bo.js"],
             dest: "publish/examples/basic"
         },
         {
-            src: ["src/work-order-bo.ts", "src/work-order-model.ts", "src/work-order-store.ts"],
+            src: ["src/work-order-bo.js", "src/work-order-model.js", "src/work-order-store.js"],
             dest: "publish/examples/workorder"
         }
     ]);
