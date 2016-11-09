@@ -1,6 +1,6 @@
 {
 	"name": "@pragmaproducts/pragma-business-models",
-	"version": "1.0.11",
+	"version": "1.0.13",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
@@ -22,11 +22,11 @@
 	"jspm": {
 		"registry": "npm",
 		"jspmPackage": true,
+		"jspmNodeConversion": false,
 		"main": "pragma-business-object",
-		"format": "amd",
+		"format": "es6",
 		"directories": {
 			"dist": "publish/"
 		}
-	},
-	"dependencies": {}
+	}
 }
