@@ -1,6 +1,6 @@
 {
   "name": "@pragmaproducts/pragma-business-models",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,9 +16,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dev-dependencies": {
-    "build-utilities": "0.0.102"
-  },
   "jspm": {
     "registry": "npm",
     "jspmPackage": true,
@@ -30,6 +27,6 @@
     }
   },
   "devDependencies": {
-    "build-utilities": "0.0.110"
+    "build-utilities": "0.0.111"
   }
 }
