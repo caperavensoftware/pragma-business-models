@@ -6,28 +6,8 @@ gulp.task('publish', ['build:all'], function() {
 
     publish.publish([
         {
-            src: ["app/src/index.js"],
-            dest: "publish"
-        },
-        {
             src: ["app/src/lib/**/*.*"],
-            dest: "publish/lib"
-        },
-        {
-            src: ["src/lib/**/*.*"],
-            dest: "publish/lib"
-        },
-        {
-            src: ["src/types/**/*.*"],
-            dest: "publish/types"
-        },
-        {
-            src: ["src/calculator-bo.js"],
-            dest: "publish/examples/basic"
-        },
-        {
-            src: ["src/work-order-bo.js", "src/work-order-model.js", "src/work-order-store.js"],
-            dest: "publish/examples/workorder"
+            dest: "publish"
         }
     ]);
 

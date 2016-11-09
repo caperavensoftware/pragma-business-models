@@ -12,6 +12,10 @@ describe('CalculatorBO Tests', function() {
         expect(calculatorBO).to.not.be.null;
     });
 
+    it('not constructor', function() {
+        expect(() => CalculatorBO()).to.throw("Cannot call a class as a function");
+    });
+
     it('add', function() {
         // Act
         const result = calculatorBO.performAction(CalculatorBOActions.add, {value1: 1, value2: 2});

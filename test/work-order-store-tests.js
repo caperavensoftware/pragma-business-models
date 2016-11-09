@@ -13,6 +13,10 @@ describe('WorkOrderStore Tests', function() {
         expect(workOrderStore).to.not.be.null;
     });
 
+    it('not constructor', function() {
+        expect(() => WorkOrderStore()).to.throw("Cannot call a class as a function");
+    });
+
     it('load', function() {
         // Act
         const result = workOrderStore.load({id: 1000, code: "A", description: "A Description"});

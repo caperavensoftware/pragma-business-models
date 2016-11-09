@@ -16,6 +16,10 @@ describe('WorkOrderBO Tests', function() {
         expect(workOrderBO).to.not.be.null;
     });
 
+    it('not constructor', function() {
+        expect(() => WorkOrderBO()).to.throw("Cannot call a class as a function");
+    });
+
     it('status_approve', function() {
         // Act
         workOrderBO.performAction(WorkOrderBOActions.status_approve);

@@ -12,4 +12,8 @@ describe('WorkOrderModel Tests', function() {
     it('constructor', function() {
         expect(workOrderModel).to.not.be.null;
     });
+
+    it('not constructor', function() {
+        expect(() => WorkOrderModel()).to.throw("Cannot call a class as a function");
+    });
 });

@@ -1,0 +1,32 @@
+{
+	"name": "@pragmaproducts/pragma-business-models",
+	"version": "1.0.11",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "gulp test",
+		"audit": "gulp clean:coverage && gulp audit:all && gulp test:coverage && gulp build:all && gulp test:e2e && gulp test:generate-report && gulp serve:coverage-report",
+		"test:ui": "gulp build:all && gulp test:e2e",
+		"build": "gulp build:all",
+		"watch:ui": "gulp build:all && gulp watch:ui",
+		"watch:all": "gulp build:all && gulp watch:all",
+		"run": "gulp build:all && gulp serve",
+		"publish": "gulp publish"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dev-dependencies": {
+		"build-utilities": "0.0.102"
+	},
+	"jspm": {
+		"registry": "npm",
+		"jspmPackage": true,
+		"main": "pragma-business-object",
+		"format": "amd",
+		"directories": {
+			"dist": "publish/"
+		}
+	},
+	"dependencies": {}
+}

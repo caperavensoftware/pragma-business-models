@@ -12,4 +12,8 @@ describe('PragmaBusinessObject Tests', function() {
     it('constructor', function() {
         expect(pragmaBusinessObject).to.not.be.null;
     });
+
+    it('not constructor', function() {
+        expect(() => PragmaBusinessObject()).to.throw("Cannot call a class as a function");
+    });
 });

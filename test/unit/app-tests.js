@@ -12,6 +12,10 @@ describe('App Tests', function() {
         expect(app).to.not.be.null;
     });
 
+    it('not constructor', function() {
+        expect(() => App()).to.throw("Cannot call a class as a function");
+    });
+
     it('configureRouter', function() {
         let configuredMap = [];
         const router = {};
